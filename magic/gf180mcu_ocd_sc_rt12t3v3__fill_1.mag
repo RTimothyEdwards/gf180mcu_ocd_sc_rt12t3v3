@@ -1,0 +1,118 @@
+magic
+tech gf180mcuD
+magscale 1 10
+timestamp 1784825094
+<< nwell >>
+rect -122 649 234 1466
+<< pwell >>
+rect -36 -36 148 563
+rect 0 -60 112 -36
+<< psubdiff >>
+rect -36 471 148 563
+rect -36 425 -23 471
+rect 23 425 89 471
+rect 135 425 148 471
+rect -36 359 148 425
+rect -36 313 -23 359
+rect 23 313 89 359
+rect 135 313 148 359
+rect -36 247 148 313
+rect -36 201 -23 247
+rect 23 201 89 247
+rect 135 201 148 247
+rect -36 135 148 201
+rect -36 89 -23 135
+rect 23 89 89 135
+rect 135 89 148 135
+rect -36 23 148 89
+rect -36 -23 -23 23
+rect 23 -23 89 23
+rect 135 -23 148 23
+rect -36 -36 148 -23
+<< nsubdiff >>
+rect -36 1367 148 1380
+rect -36 1321 -23 1367
+rect 23 1321 89 1367
+rect 135 1321 148 1367
+rect -36 1255 148 1321
+rect -36 1209 -23 1255
+rect 23 1209 89 1255
+rect 135 1209 148 1255
+rect -36 1143 148 1209
+rect -36 1097 -23 1143
+rect 23 1097 89 1143
+rect 135 1097 148 1143
+rect -36 1031 148 1097
+rect -36 985 -23 1031
+rect 23 985 89 1031
+rect 135 985 148 1031
+rect -36 919 148 985
+rect -36 873 -23 919
+rect 23 873 89 919
+rect 135 873 148 919
+rect -36 807 148 873
+rect -36 761 -23 807
+rect 23 761 89 807
+rect 135 761 148 807
+rect -36 735 148 761
+<< psubdiffcont >>
+rect -23 425 23 471
+rect 89 425 135 471
+rect -23 313 23 359
+rect 89 313 135 359
+rect -23 201 23 247
+rect 89 201 135 247
+rect -23 89 23 135
+rect 89 89 135 135
+rect -23 -23 23 23
+rect 89 -23 135 23
+<< nsubdiffcont >>
+rect -23 1321 23 1367
+rect 89 1321 135 1367
+rect -23 1209 23 1255
+rect 89 1209 135 1255
+rect -23 1097 23 1143
+rect 89 1097 135 1143
+rect -23 985 23 1031
+rect 89 985 135 1031
+rect -23 873 23 919
+rect 89 873 135 919
+rect -23 761 23 807
+rect 89 761 135 807
+<< metal1 >>
+rect -23 1367 135 1404
+rect 23 1321 89 1367
+rect -23 1284 135 1321
+rect -23 1255 23 1284
+rect -23 1143 23 1209
+rect -23 1031 23 1097
+rect -23 919 23 985
+rect -23 807 23 873
+rect -23 749 23 761
+rect 89 1255 135 1284
+rect 89 1143 135 1209
+rect 89 1031 135 1097
+rect 89 919 135 985
+rect 89 807 135 873
+rect 89 750 135 761
+rect -23 471 23 482
+rect -23 359 23 425
+rect -23 247 23 313
+rect -23 135 23 201
+rect -23 60 23 89
+rect 89 471 135 482
+rect 89 359 135 425
+rect 89 247 135 313
+rect 89 135 135 201
+rect 89 60 135 89
+rect -23 23 135 60
+rect 23 -23 89 23
+rect -23 -60 135 -23
+<< labels >>
+flabel metal1 s 0 -60 112 60 0 FreeSans 400 0 0 0 VSS
+port 4 nsew ground bidirectional abutment
+flabel metal1 s 0 1284 112 1404 0 FreeSans 400 0 0 0 VDD
+port 1 nsew power bidirectional abutment
+<< properties >>
+string FIXED_BBOX 0 0 112 1344
+<< end >>
