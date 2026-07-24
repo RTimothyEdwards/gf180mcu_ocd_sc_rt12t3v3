@@ -1,12 +1,12 @@
-v {xschem version=3.4.7RC file_version=1.2}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
 E {}
-N 120 -520 120 -490 { lab=VDD}
-N 260 -520 260 -490 { lab=VDD}
-N 120 -430 120 -400 { lab=#net1}
+N 120 -520 120 -490 { lab=#net1}
+N 260 -520 260 -490 { lab=#net1}
+N 120 -430 120 -400 { lab=#net2}
 N 120 -340 120 -310 { lab=Y}
 N 70 -370 80 -370 { lab=A1}
 N 120 -460 140 -460 { lab=VDD}
@@ -19,21 +19,18 @@ N 210 -460 220 -460 { lab=B1}
 N 260 -460 280 -460 { lab=VDD}
 N 60 -230 80 -230 { lab=B1}
 N 120 -230 140 -230 { lab=VSS}
-N 190 -60 190 -40 { lab=VSS}
-N 120 -60 190 -60 { lab=VSS}
 N 120 -90 120 -60 { lab=VSS}
-N 190 -60 270 -60 { lab=VSS}
 N 270 -90 270 -60 { lab=VSS}
-N 120 -180 120 -150 { lab=#net2}
-N 120 -180 270 -180 { lab=#net2}
-N 270 -180 270 -150 { lab=#net2}
+N 120 -180 120 -150 { lab=#net3}
+N 120 -180 270 -180 { lab=#net3}
+N 270 -180 270 -150 { lab=#net3}
 N 120 -310 260 -310 { lab=Y}
 N 190 -290 320 -290 { lab=Y}
 N 70 -460 80 -460 { lab=A0}
-N 210 -230 230 -230 { lab=B1}
+N 210 -230 230 -230 { lab=B0}
 N 270 -230 290 -230 { lab=VSS}
-N 120 -200 120 -180 { lab=#net2}
-N 270 -200 270 -180 { lab=#net2}
+N 120 -200 120 -180 { lab=#net3}
+N 270 -200 270 -180 { lab=#net3}
 N 120 -270 120 -260 { lab=Y}
 N 120 -270 270 -270 { lab=Y}
 N 270 -270 270 -260 { lab=Y}
@@ -42,10 +39,9 @@ N 190 -310 190 -290 { lab=Y}
 N 210 -370 220 -370 { lab=B0}
 N 260 -370 280 -370 { lab=VDD}
 N 260 -340 260 -310 { lab=Y}
-N 260 -430 260 -400 { lab=#net3}
-C {vdd.sym} 120 -520 0 0 {name=l1 lab=VDD}
-C {vdd.sym} 260 -520 0 0 {name=l2 lab=VDD}
-C {gnd.sym} 190 -40 0 0 {name=l3 lab=VSS}
+N 260 -430 260 -400 { lab=#net4}
+N 90 -520 260 -520 {lab=#net1}
+N 90 -60 270 -60 {lab=VSS}
 C {symbols/pfet_03v3.sym} 100 -460 0 0 {name=M1 L=0.28u W=2.57u m=1 nf=2 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {symbols/pfet_03v3.sym} 100 -370 0 0 {name=M2 L=0.28u W=2.57u m=1 nf=2 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {symbols/nfet_03v3.sym} 100 -120 0 0 {name=M3 L=0.28u W=1.02u m=1 nf=1 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=nfet_03v3 spiceprefix=X}
@@ -75,3 +71,5 @@ C {ipin.sym} 210 -370 0 0 {name=p4 lab=B0}
 C {opin.sym} 320 -290 0 0 {name=p5 lab=Y}
 C {ipin.sym} -30 -60 0 0 {name=p6 lab=VDD}
 C {ipin.sym} -30 -30 0 0 {name=p7 lab=VSS}
+C {lab_pin.sym} 90 -60 0 0 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 90 -520 0 0 {name=p9 sig_type=std_logic lab=VDD}

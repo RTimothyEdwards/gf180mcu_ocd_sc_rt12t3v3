@@ -1,4 +1,4 @@
-v {xschem version=3.4.7RC file_version=1.2}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -22,8 +22,8 @@ N 90 -360 220 -360 { lab=A}
 N 90 -360 90 -310 { lab=A}
 N 90 -90 180 -90 { lab=A}
 N 90 -180 90 -90 { lab=A}
-N 200 -280 220 -280 { lab=#net3}
-N 200 -180 220 -180 { lab=#net4}
+N 200 -280 220 -280 { lab=EN_BAR}
+N 200 -180 220 -180 { lab=EN}
 N 250 -590 280 -590 { lab=VSS}
 N 250 -690 280 -690 { lab=VDD}
 N 250 -660 250 -620 { lab=EN_BAR}
@@ -32,9 +32,7 @@ N 160 -690 200 -690 {lab=EN}
 N 200 -690 210 -690 {lab=EN}
 N 160 -590 210 -590 {lab=EN}
 N 250 -560 250 -530 { lab=VSS}
-N 250 -750 250 -720 { lab=VDD}
-C {vdd.sym} 260 -420 0 0 {name=l1 lab=VDD}
-C {gnd.sym} 260 -30 0 0 {name=l3 lab=VSS}
+N 250 -750 250 -720 { lab=#net3}
 C {symbols/pfet_03v3.sym} 240 -360 0 0 {name=M1 L=0.28u W=2.57u m=1 nf=1 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {symbols/nfet_03v3.sym} 240 -90 0 0 {name=M2 L=0.28u W=1.02u m=1 nf=1 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=nfet_03v3 spiceprefix=X}
 C {lab_wire.sym} 290 -360 2 0 {name=l2 sig_type=std_logic lab=VDD
@@ -53,8 +51,6 @@ C {lab_wire.sym} 280 -590 2 0 {name=l11 sig_type=std_logic lab=VSS
 C {symbols/pfet_03v3.sym} 230 -690 0 0 {name=M8 L=0.28u W=2.57u m=1 nf=1 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {lab_wire.sym} 280 -690 2 0 {name=l12 sig_type=std_logic lab=VDD
 }
-C {gnd.sym} 250 -530 0 0 {name=l13 lab=VSS}
-C {vdd.sym} 250 -750 0 0 {name=l14 lab=VDD}
 C {lab_wire.sym} 250 -640 2 0 {name=p7 sig_type=std_logic lab=EN_BAR}
 C {lab_wire.sym} 200 -280 0 0 {name=p9 sig_type=std_logic lab=EN_BAR}
 C {lab_wire.sym} 200 -180 0 0 {name=p2 sig_type=std_logic lab=EN}
@@ -63,3 +59,7 @@ C {ipin.sym} 160 -640 0 0 {name=p2 lab=EN}
 C {opin.sym} 390 -230 0 0 {name=p3 lab=Y}
 C {ipin.sym} -30 -60 0 0 {name=p4 lab=VDD}
 C {ipin.sym} -30 -30 0 0 {name=p5 lab=VSS}
+C {lab_pin.sym} 260 -30 0 0 {name=p6 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 260 -420 0 0 {name=p8 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 250 -530 0 0 {name=p10 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 250 -750 0 0 {name=p11 sig_type=std_logic lab=VDD}

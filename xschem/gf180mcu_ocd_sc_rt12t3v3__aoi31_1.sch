@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -34,14 +34,12 @@ N 400 -560 410 -560 { lab=A2}
 N 450 -560 470 -560 { lab=VDD}
 N 280 -500 450 -500 { lab=#net1}
 N 450 -530 450 -500 { lab=#net1}
-N 210 -140 210 -110 { lab=#net5}
+N 210 -140 210 -110 { lab=#net4}
 N 210 -170 230 -170 { lab=VSS}
-N 150 -170 170 -170 { lab=A1}
-N 320 -210 320 -130 {}
-N 210 -130 320 -130 {}
-C {vdd.sym} 140 -620 0 0 {name=l1 lab=VDD}
-C {vdd.sym} 280 -620 0 0 {name=l2 lab=VDD}
-C {gnd.sym} 210 -110 0 0 {name=l3 lab=VSS}
+N 150 -170 170 -170 { lab=A2}
+N 320 -210 320 -130 {lab=#net4}
+N 210 -130 320 -130 {lab=#net4}
+N 120 -620 450 -620 {lab=VDD}
 C {symbols/pfet_03v3.sym} 120 -560 0 0 {name=M1 L=0.28u W=2.57u m=1 nf=2 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {symbols/pfet_03v3.sym} 260 -560 0 0 {name=M2 L=0.28u W=2.57u m=1 nf=2 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {symbols/nfet_03v3.sym} 190 -360 0 0 {name=M3 L=0.28u W=1.02u m=1 nf=1 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=nfet_03v3 spiceprefix=X}
@@ -58,7 +56,6 @@ C {lab_wire.sym} 230 -460 2 0 {name=l10 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 260 -300 0 0 {name=l11 sig_type=std_logic lab=B
 }
 C {lab_wire.sym} 340 -300 2 0 {name=l12 sig_type=std_logic lab=VSS}
-C {vdd.sym} 450 -620 0 0 {name=l13 lab=VDD}
 C {symbols/pfet_03v3.sym} 430 -560 0 0 {name=M7 L=0.28u W=2.57u m=1 nf=2 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=pfet_03v3 spiceprefix=X}
 C {lab_wire.sym} 470 -560 2 0 {name=l14 sig_type=std_logic lab=VDD}
 C {symbols/nfet_03v3.sym} 190 -170 0 0 {name=M8 L=0.28u W=1.02u m=1 nf=1 ad="'int((nf+1)/2) * W/nf * 0.18u'" pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'" as="'int((nf+2)/2) * W/nf * 0.18u'" ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'" nrd="'0.18u / W'" nrs="'0.18u / W'" sa=0 sb=0 sd=0 model=nfet_03v3 spiceprefix=X}
@@ -71,3 +68,5 @@ C {ipin.sym} 160 -460 0 0 {name=p4 lab=B}
 C {opin.sym} 270 -410 0 0 {name=p5 lab=Y}
 C {ipin.sym} -30 -60 0 0 {name=p6 lab=VDD}
 C {ipin.sym} -30 -30 0 0 {name=p7 lab=VSS}
+C {lab_pin.sym} 120 -620 0 0 {name=p8 sig_type=std_logic lab=VDD}
+C {lab_pin.sym} 210 -110 0 0 {name=p9 sig_type=std_logic lab=VSS}
