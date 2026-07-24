@@ -16,6 +16,8 @@ EOF
 	mv ${cellname}.gds ../gds/
         echo "Running DRC on: ${cellname}.gds"
 	klayout -b -zz -r ${PDK_ROOT}/${PDK}/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/${cellname}.gds -rd report=${cellname}_drc_klayout.lyrdb -rd feol=True -rd beol=True -rd conn_drc=True -rd wedge=True -rd run_mode=deep -rd thr=$(nproc) -rd topcell=${cellname}
+	# klayout keeps writing output both here and in ../gds/.  Keep the one here
+	rm ../gds/${cellname}_drc_klayout.lyrdb
     fi
 done
 echo "Done!"

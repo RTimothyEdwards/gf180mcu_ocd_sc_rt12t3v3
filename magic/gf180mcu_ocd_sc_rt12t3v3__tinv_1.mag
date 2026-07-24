@@ -467,12 +467,12 @@ rect -23 -60 1367 -23
 flabel metal1 s 72 415 424 481 0 FreeSans 320 0 0 0 A
 port 1 nsew signal input
 flabel metal1 534 239 586 954 0 FreeSans 320 0 0 0 Y
-port 9 nsew
+port 3 nsew signal output
 flabel metal1 1255 502 1255 502 0 FreeSans 320 90 0 0 EN_BAR
 flabel metal1 s 0 1284 1344 1404 0 FreeSans 400 180 0 0 VDD
-port 7 nsew power bidirectional abutment
+port 4 nsew power bidirectional abutment
 flabel metal1 s 0 -60 1344 60 0 FreeSans 400 180 0 0 VSS
-port 8 nsew ground bidirectional abutment
+port 5 nsew ground bidirectional abutment
 flabel metal1 s 858 639 1158 705 0 FreeSans 320 180 0 0 EN
 port 2 nsew signal input
 << properties >>

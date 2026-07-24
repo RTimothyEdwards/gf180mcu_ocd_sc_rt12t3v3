@@ -1230,11 +1230,11 @@ rect 2602 163 2604 267
 rect 2548 151 2604 163
 << labels >>
 flabel metal1 s 0 -60 3607 60 0 FreeSans 400 0 0 0 VSS
-port 8 nsew ground bidirectional abutment
+port 5 nsew ground bidirectional abutment
 flabel metal1 s 74 639 374 705 0 FreeSans 320 0 0 0 CLK
 port 2 nsew signal input
 flabel metal1 s 0 1284 3584 1404 0 FreeSans 400 0 0 0 VDD
-port 7 nsew power bidirectional abutment
+port 4 nsew power bidirectional abutment
 flabel metal1 448 693 448 693 0 FreeSans 320 90 0 0 CLKN
 flabel metal2 670 501 670 501 0 FreeSans 320 90 0 0 CLKb
 flabel metal1 2315 357 2315 357 0 FreeSans 320 0 0 0 out2

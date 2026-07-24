@@ -139,7 +139,7 @@ rect 135 -23 201 23
 rect -23 -60 247 -23
 << labels >>
 flabel metal1 s 0 -60 224 60 0 FreeSans 400 0 0 0 VSS
-port 4 nsew ground bidirectional abutment
+port 2 nsew ground bidirectional abutment
 flabel metal1 s 0 1284 224 1404 0 FreeSans 400 0 0 0 VDD
 port 1 nsew power bidirectional abutment
 << properties >>

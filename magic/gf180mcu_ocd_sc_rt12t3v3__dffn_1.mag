@@ -1842,9 +1842,9 @@ rect 4506 163 4508 267
 rect 4452 151 4508 163
 << labels >>
 flabel metal1 s 0 -60 5600 60 0 FreeSans 400 0 0 0 VSS
-port 8 nsew ground bidirectional abutment
+port 6 nsew ground bidirectional abutment
 flabel metal1 s 0 1284 5600 1404 0 FreeSans 400 0 0 0 VDD
-port 7 nsew power bidirectional abutment
+port 5 nsew power bidirectional abutment
 flabel metal1 4331 357 4331 357 0 FreeSans 320 0 0 0 out2
 flabel metal1 s 5126 239 5178 964 0 FreeSans 320 90 0 0 QN
 port 4 nsew signal output

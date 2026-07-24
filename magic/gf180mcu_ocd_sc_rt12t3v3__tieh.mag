@@ -260,11 +260,11 @@ rect 471 -23 537 23
 rect -23 -60 583 -23
 << labels >>
 flabel metal1 s 0 -60 560 60 0 FreeSans 400 0 0 0 VSS
-port 4 nsew ground bidirectional abutment
+port 3 nsew ground bidirectional abutment
 flabel metal1 s 0 1284 560 1404 0 FreeSans 400 0 0 0 VDD
-port 1 nsew power bidirectional abutment
+port 2 nsew power bidirectional abutment
 flabel metal1 s 422 224 474 934 0 FreeSans 320 0 0 0 Y
-port 8 nsew
+port 1 nsew signal output
 << properties >>
 string FIXED_BBOX 0 0 560 1344
 << end >>

@@ -466,11 +466,11 @@ rect -23 -60 1367 -23
 flabel metal1 s 0 -60 1568 60 0 FreeSans 400 0 0 0 VSS
 port 4 nsew ground bidirectional abutment
 flabel metal1 s 1206 224 1258 1028 0 FreeSans 320 0 0 0 Y
-port 8 nsew
+port 2 nsew signal input
 flabel metal1 s 0 1284 1568 1404 0 FreeSans 400 0 0 0 VDD
-port 1 nsew power bidirectional abutment
+port 3 nsew power bidirectional abutment
 flabel metal1 s 74 632 1038 698 0 FreeSans 320 0 0 0 A
-port 10 nsew
+port 1 nsew signal input
 << properties >>
 string FIXED_BBOX 0 0 1344 1344
 << end >>

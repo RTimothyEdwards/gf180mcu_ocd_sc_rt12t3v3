@@ -5,6 +5,7 @@
 #
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
+mkdir -p ../netlist/schematic
 
 for filename in gf180mcu_ocd_sc_*.sch; do
     if [ -f "$filename" ]; then
