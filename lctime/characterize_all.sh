@@ -10,6 +10,9 @@ libname=gf180mcu_ocd_sc_rt12t3v3
 for filename in ../netlist/rcx/*.spice; do
     if [ -f "$filename" ]; then
 	cellname=$(basename "$filename" .spice)
+	if [[ $cellname == *__ant || $cellname == *__decap* ||  $cellname == *__fill* ]]; then
+	    continue
+	fi
 	echo "Running lctime on ${cellname}"
 	lctime --liberty template_tt.lib \
 		--include "${PDK_ROOT}/${PDK}/libs.tech/ngspice/design.ngspice" \
