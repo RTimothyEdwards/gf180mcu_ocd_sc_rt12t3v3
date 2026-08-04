@@ -1,0 +1,26 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__maj3_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__maj3_1 A B C Y VDD VSS
+X0 a_884_987# C a_208_231r# VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 a_208_231r# C a_1652_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X2 a_973_203r# A VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=4.32993p ps=24.5u w=1.02u l=0.28u
+X3 a_92_987# A a_208_231r# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X4 a_1942_145# C a_208_231r# VSS nfet_03v3 ad=0.54405p pd=3.27u as=0.3087p ps=2.01u w=1.02u l=0.28u
+X5 Y a_208_231r# VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X6 a_208_231r# C a_973_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.52065p ps=3.23u w=1.02u l=0.28u
+X7 VDD A a_1652_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X8 VDD a_208_231r# Y VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X9 a_884_987# B VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X10 a_1652_987# C a_208_231r# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X11 a_1942_145# B VSS VSS nfet_03v3 ad=0.3087p pd=2.015u as=3.24745p ps=18.375u w=1.02u l=0.28u
+X12 VDD B a_92_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X13 a_208_231r# C a_884_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X14 a_208_231r# A a_92_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X15 a_382_145# B VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.24745p ps=18.375u w=1.02u l=0.28u
+X16 a_92_987# B VDD VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X17 a_1652_987# A VDD VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X18 a_382_145# A a_208_231r# VSS nfet_03v3 ad=0.52065p pd=3.23u as=0.3087p ps=2.01u w=1.02u l=0.28u
+X19 Y a_208_231r# VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=4.32993p ps=24.5u w=1.02u l=0.28u
+X20 VDD B a_884_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+.ends
+
