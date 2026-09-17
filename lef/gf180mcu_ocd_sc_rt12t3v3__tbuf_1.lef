@@ -1,0 +1,109 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gf180mcu_ocd_sc_rt12t3v3__tbuf_1
+  CLASS CORE ;
+  FOREIGN gf180mcu_ocd_sc_rt12t3v3__tbuf_1 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 8.960 BY 6.720 ;
+  SYMMETRY X Y ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 1.672300 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.765 4.140 1.940 4.370 ;
+        RECT 1.140 2.405 1.390 4.140 ;
+        RECT 0.410 2.075 2.170 2.405 ;
+    END
+  END A
+  PIN EN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 2.625000 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 7.015 4.090 8.115 4.320 ;
+        RECT 7.820 3.525 8.080 4.090 ;
+        RECT 6.530 3.195 8.080 3.525 ;
+        RECT 7.820 2.325 8.080 3.195 ;
+        RECT 5.420 2.095 8.110 2.325 ;
+    END
+  END EN
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.976900 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 5.150 4.770 5.410 5.730 ;
+        RECT 4.910 4.525 5.410 4.770 ;
+        RECT 4.910 1.425 5.170 4.525 ;
+        RECT 4.910 1.195 5.580 1.425 ;
+    END
+  END Y
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Nwell ;
+        RECT -0.660 3.245 9.520 7.330 ;
+      LAYER Metal1 ;
+        RECT -0.115 6.420 9.075 7.020 ;
+        RECT -0.115 3.750 0.115 6.420 ;
+        RECT 0.525 5.065 0.755 6.420 ;
+        RECT 2.125 5.060 2.355 6.420 ;
+        RECT 3.565 5.520 3.795 6.420 ;
+        RECT 6.605 5.065 6.835 6.420 ;
+        RECT 8.205 5.060 8.435 6.420 ;
+        RECT 8.845 3.745 9.075 6.420 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Pwell ;
+        RECT -0.180 -0.180 9.140 2.815 ;
+      LAYER Metal1 ;
+        RECT -0.115 0.300 0.115 2.410 ;
+        RECT 0.790 0.300 1.900 0.585 ;
+        RECT 2.880 0.300 3.990 0.585 ;
+        RECT 6.830 0.300 7.940 0.585 ;
+        RECT 8.845 0.300 9.075 2.410 ;
+        RECT -0.115 -0.300 9.075 0.300 ;
+    END
+  END VSS
+  OBS
+      LAYER Metal1 ;
+        RECT 1.325 4.830 1.555 6.180 ;
+        RECT 2.765 5.290 2.995 6.190 ;
+        RECT 4.365 5.960 6.195 6.190 ;
+        RECT 4.365 5.290 4.595 5.960 ;
+        RECT 2.765 5.060 4.595 5.290 ;
+        RECT 5.965 5.055 6.195 5.960 ;
+        RECT 1.325 4.770 2.685 4.830 ;
+        RECT 7.405 4.820 7.635 6.180 ;
+        RECT 6.580 4.770 8.615 4.820 ;
+        RECT 1.325 4.600 4.110 4.770 ;
+        RECT 2.455 4.540 4.110 4.600 ;
+        RECT 5.645 4.560 8.615 4.770 ;
+        RECT 5.645 4.540 6.860 4.560 ;
+        RECT 2.455 2.320 2.685 4.540 ;
+        RECT 2.455 2.075 4.255 2.320 ;
+        RECT 2.455 1.425 2.685 2.075 ;
+        RECT 4.430 1.425 4.660 1.815 ;
+        RECT 8.355 1.425 8.615 4.560 ;
+        RECT 1.170 1.195 2.685 1.425 ;
+        RECT 3.260 1.195 4.660 1.425 ;
+        RECT 7.185 1.195 8.615 1.425 ;
+        RECT 4.430 0.770 4.660 1.195 ;
+  END
+END gf180mcu_ocd_sc_rt12t3v3__tbuf_1
+END LIBRARY
+
