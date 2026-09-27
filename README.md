@@ -33,15 +33,8 @@ and individuals looking to design custom ASICs for Cubesat projects.
 
 ---------------------------------
 
-This repository was created on July 10, 2026 and is currently a work
-in progress.  As long as this notice exists, the library is not in
-a complete enough state to use for circuit synthesis.
+This repository was created on July 10, 2026 and is currently has a
+sufficient number of defined cells to be able to be used in
+synthesis.  A more complete set of cells would be useful and will
+be added as time permits.
 
-Still to do:
-(1) Determine why the dffn won't get through lctime (probably has to do
-    with the definition of CLKN)
-(2) When open_pdks compiles the liberty files into a library, there are
-    excess closing braces
-(3) Once the excess closing braces are removed, synthesis with yosys
-    fails because yosys can't map any of the flops, which might be due
-    to missing templates (setup and hold) in the library file.
