@@ -1,0 +1,70 @@
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Class gf180mcu_ocd_sc_rt12t3v3__dffsr_1 (0):  Merged 21 parallel devices.
+Subcircuit summary:
+Circuit 1: gf180mcu_ocd_sc_rt12t3v3__dffsr |Circuit 2: gf180mcu_ocd_sc_rt12t3v3__dffsr 
+-------------------------------------------|-------------------------------------------
+pfet_03v3 (42->21)                         |pfet_03v3 (21)                             
+nfet_03v3 (21)                             |nfet_03v3 (21)                             
+Number of devices: 42                      |Number of devices: 42                      
+Number of nets: 29                         |Number of nets: 29                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+nfet_03v3:1 vs. nfet_03v3:M8:
+ w circuit1: 1.02e-06   circuit2: 6e-07   (delta=51.9%, cutoff=1%)
+nfet_03v3:59 vs. nfet_03v3:M16:
+ w circuit1: 1.02e-06   circuit2: 6e-07   (delta=51.9%, cutoff=1%)
+nfet_03v3:19 vs. nfet_03v3:M18:
+ w circuit1: 1.02e-06   circuit2: 6e-07   (delta=51.9%, cutoff=1%)
+nfet_03v3:3 vs. nfet_03v3:M10:
+ w circuit1: 1.02e-06   circuit2: 6e-07   (delta=51.9%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: gf180mcu_ocd_sc_rt12t3v3__dffsr |Circuit 2: gf180mcu_ocd_sc_rt12t3v3__dffsr 
+-------------------------------------------|-------------------------------------------
+QN                                         |QN                                         
+VDD                                        |VDD                                        
+VSS                                        |VSS                                        
+CLK                                        |CLK                                        
+D                                          |D                                          
+Q                                          |Q                                          
+RN                                         |RN                                         
+SN                                         |SN                                         
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes gf180mcu_ocd_sc_rt12t3v3__dffsr_1 and gf180mcu_ocd_sc_rt12t3v3__dffsr_1 are equivalent.
+
+Final result: Circuits match uniquely.
+Property errors were found.
+
+The following cells had property errors:
+ gf180mcu_ocd_sc_rt12t3v3__dffsr_1

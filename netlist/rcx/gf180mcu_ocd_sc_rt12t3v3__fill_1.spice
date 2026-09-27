@@ -1,0 +1,17 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__fill_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__fill_1 VDD VSS
+R0 VDD.n6 VDD.n4 317.757
+R1 VDD.n0 VDD.n6 317.709
+R2 VDD.n1 VDD.n4 6.51963
+R3 VDD.n1 VDD.n3 2.416
+R4 VDD.n2 VDD.n0 3.01425
+R5 VDD.n7 VDD.n3 1.471
+R6 VDD.n0 VDD.n3 1.49112
+R7 VDD.n7 VDD.n6 3.1505
+R8 VDD.n5 VDD.n2 2.68625
+R9 VDD.n5 VDD.n4 1.50212
+R10 VDD.n7 VDD.n5 1.45166
+R11 VDD.n2 VDD.n1 1.37962
+.ends
+

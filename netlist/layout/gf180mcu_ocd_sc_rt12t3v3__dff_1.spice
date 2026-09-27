@@ -1,0 +1,47 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__dff_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__dff_1 D CLK Q QN VDD VSS
+X0 a_828_987# CLKb in1 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 out1 in1 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X2 a_2812_987# out1 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X3 a_4028_987# out2 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X4 CLKN CLK VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=19.0728p ps=0.12486m w=1.285u l=0.28u
+X5 VDD CLKN CLKb VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X6 VDD D a_828_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X7 out2 in2 VDD VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X8 in1 CLKN a_945_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.52065p ps=3.23u w=1.02u l=0.28u
+X9 VDD out1 a_2044_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X10 a_2044_987# CLKN in1 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X11 VDD out1 a_2812_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X12 Q QN VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X13 QN out2 VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.74232p ps=14.88u w=1.02u l=0.28u
+X14 a_2044_987# out1 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X15 in2 CLKb a_2903_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.52065p ps=3.23u w=1.02u l=0.28u
+X16 Q QN VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.08512p ps=16.74u w=1.02u l=0.28u
+X17 a_2135_203r# out1 VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.74232p ps=14.88u w=1.02u l=0.28u
+X18 a_2903_203r# out1 VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.74232p ps=14.88u w=1.02u l=0.28u
+X19 a_828_987# D VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X20 CLKN CLK VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.08512p ps=16.74u w=1.02u l=0.28u
+X21 out1 in1 VSS VSS nfet_03v3 ad=0.3087p pd=2.015u as=3.08512p ps=16.74u w=1.02u l=0.28u
+X22 VDD in1 out1 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X23 VDD QN Q VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X24 in2 CLKb a_4028_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X25 in2 CLKN a_2812_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X26 VDD CLK CLKN VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X27 in1 CLKb a_2135_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.52065p ps=3.23u w=1.02u l=0.28u
+X28 a_4028_987# CLKb in2 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X29 a_2812_987# CLKN in2 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X30 QN out2 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X31 CLKb CLKN VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X32 CLKb CLKN VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.08512p ps=16.74u w=1.02u l=0.28u
+X33 VDD in2 out2 VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X34 in1 CLKN a_2044_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X35 in1 CLKb a_828_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X36 VDD out2 QN VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X37 in2 CLKN a_4107_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.53235p ps=3.25u w=1.02u l=0.28u
+X38 a_945_203r# D VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.08512p ps=16.74u w=1.02u l=0.28u
+X39 VDD out2 a_4028_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X40 out2 in2 VSS VSS nfet_03v3 ad=0.3087p pd=2.015u as=3.08512p ps=16.74u w=1.02u l=0.28u
+X41 a_4107_203r# out2 VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.74232p ps=14.88u w=1.02u l=0.28u
+.ends
+

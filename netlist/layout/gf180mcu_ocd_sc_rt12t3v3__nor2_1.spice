@@ -1,0 +1,11 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__nor2_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__nor2_1 A B Y VDD VSS
+X0 a_92_987# A VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 Y B VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.87915p ps=15.24u w=1.02u l=0.28u
+X2 Y B a_92_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X3 VDD A a_92_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X4 a_92_987# B Y VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X5 Y A VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.87915p ps=15.24u w=1.02u l=0.28u
+.ends
+

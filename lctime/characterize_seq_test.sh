@@ -9,7 +9,8 @@
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
 libname=gf180mcu_ocd_sc_rt12t3v3
-cellname=${libname}__dffsr_1
+# cellname=${libname}__dffsr_1
+cellname=${libname}__dffn_1
 
 lctime --liberty template_tt.lib \
 --include "${PDK_ROOT}/${PDK}/libs.tech/ngspice/design.ngspice" \

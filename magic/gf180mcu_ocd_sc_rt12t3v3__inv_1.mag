@@ -268,7 +268,10 @@ port 3 nsew power bidirectional abutment
 flabel metal1 s 74 632 374 698 0 FreeSans 320 0 0 0 A
 port 1 nsew signal input
 flabel metal1 s 422 224 474 934 0 FreeSans 320 0 0 0 Y
-port 2 nsew signal input
+port 2 nsew signal output
 << properties >>
 string FIXED_BBOX 0 0 560 1344
+string LEFclass CORE
+string LEFsymmetry X Y
+string LEFsite unithd
 << end >>

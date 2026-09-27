@@ -1,0 +1,14 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__tinv_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__tinv_1 A EN Y VDD VSS
+X0 Y EN a_181_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.52065p ps=3.23u w=1.02u l=0.28u
+X1 a_92_987# A VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X2 VDD EN EN_BAR VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X3 Y EN_BAR a_92_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X4 EN_BAR EN VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.57195p ps=19.96u w=1.02u l=0.28u
+X5 VDD A a_92_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X6 a_92_987# EN_BAR Y VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X7 EN_BAR EN VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X8 a_181_203r# A VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.57195p ps=19.96u w=1.02u l=0.28u
+.ends
+
