@@ -25,8 +25,10 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 	
 	library_features(report_delay_calculation, report_power_calculation);
 	
+	voltage_map (VNW, 3.3);
 	voltage_map (VDD, 3.3);
 	voltage_map (VSS, 0);
+	voltage_map (VPW, 0);
 	
 	input_threshold_pct_fall : 50.0;
 	input_threshold_pct_rise : 50.0;
@@ -89,11 +91,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -136,11 +140,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -183,11 +189,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -239,11 +247,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -295,11 +305,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -423,11 +435,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -443,7 +457,6 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 			direction : output;
 			function : "(A)";
 			max_transition : 1.5;
-			max_capacitance : 1.0;
 			related_ground_pin : VSS;
 			related_power_pin : VDD;
 
@@ -456,11 +469,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -476,7 +491,6 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 			direction : output;
 			function : "(A)";
 			max_transition : 1.5;
-			max_capacitance : 1.0;
 			related_ground_pin : VSS;
 			related_power_pin : VDD;
 
@@ -489,11 +503,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -521,11 +537,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -553,11 +571,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -585,11 +605,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -617,11 +639,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -649,11 +673,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -741,11 +767,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -773,11 +801,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -804,11 +834,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 
                 pg_pin(VDD) {
                         voltage_name : VDD;
+                        related_bias_pin : VNW;
                         pg_type : primary_power;
                 }
 
                 pg_pin(VSS) {
                         voltage_name : VSS;
+                        related_bias_pin : VPW;
                         pg_type : primary_ground;
 	  	}
 
@@ -845,11 +877,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -886,11 +920,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -926,11 +962,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -966,11 +1004,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1006,11 +1046,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1046,11 +1088,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1094,11 +1138,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1150,11 +1196,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1190,11 +1238,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1230,11 +1280,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1270,11 +1322,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1310,11 +1364,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1358,11 +1414,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1398,11 +1456,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1438,11 +1498,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1478,11 +1540,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1518,11 +1582,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1558,11 +1624,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1598,11 +1666,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1638,11 +1708,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1678,11 +1750,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1726,11 +1800,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1774,11 +1850,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1822,11 +1900,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1870,11 +1950,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1918,11 +2000,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -1966,11 +2050,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2014,11 +2100,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2062,11 +2150,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2110,11 +2200,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2158,11 +2250,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2206,11 +2300,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2254,11 +2350,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2310,11 +2408,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2366,11 +2466,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2422,11 +2524,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2478,11 +2582,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2534,11 +2640,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2590,11 +2698,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2646,11 +2756,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2702,11 +2814,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2758,11 +2872,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2814,11 +2930,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2870,11 +2988,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2926,11 +3046,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -2982,11 +3104,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -3005,11 +3129,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -3028,11 +3154,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 		
@@ -3049,11 +3177,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}
@@ -3064,11 +3194,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}
@@ -3079,11 +3211,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}
@@ -3094,11 +3228,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}
@@ -3109,11 +3245,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}
@@ -3124,11 +3262,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}
@@ -3139,11 +3279,13 @@ library(gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
 		
 		pg_pin(VDD) {
 			voltage_name : VDD;
+			related_bias_pin : VNW;
 			pg_type : primary_power;
 		}
 		
 		pg_pin(VSS) {
 			voltage_name : VSS;
+			related_bias_pin : VPW;
 			pg_type : primary_ground;
 		}
 	}

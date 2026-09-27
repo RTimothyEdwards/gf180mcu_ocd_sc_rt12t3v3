@@ -488,7 +488,4 @@ flabel metal1 s 493 745 819 810 0 FreeSans 320 0 0 0 A
 port 1 nsew signal input
 << properties >>
 string FIXED_BBOX 0 0 1344 1344
-string LEFclass CORE
-string LEFsymmetry X Y
-string LEFsite unithd
 << end >>
