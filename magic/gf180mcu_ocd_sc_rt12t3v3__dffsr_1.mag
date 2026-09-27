@@ -2805,4 +2805,7 @@ flabel metal1 3102 440 3102 440 0 FreeSans 320 0 0 0 in1
 flabel metal2 670 501 670 501 0 FreeSans 320 90 0 0 CLKb
 << properties >>
 string FIXED_BBOX 0 0 8288 1344
+string LEFclass CORE
+string LEFsymmetry X Y
+string LEFsite unithd
 << end >>

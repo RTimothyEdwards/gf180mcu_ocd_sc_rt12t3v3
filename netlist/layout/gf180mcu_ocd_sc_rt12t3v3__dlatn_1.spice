@@ -1,0 +1,32 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__dlatn_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__dlatn_1 D CLK Q VDD VSS
+X0 a_828_987# CLKb in2 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 out2 in2 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X2 Q a_2849_203r# VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.81442p ps=15.045u w=1.02u l=0.28u
+X3 VDD out2 a_2849_203r# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X4 CLKN CLK VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=6.973p ps=42.83u w=1.285u l=0.28u
+X5 VDD CLKN CLKb VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X6 VDD D a_828_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X7 VDD out2 a_2044_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X8 a_2044_987# CLKN in2 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X9 a_2849_203r# out2 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X10 a_913_203r# D VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.81442p ps=15.045u w=1.02u l=0.28u
+X11 a_2044_987# out2 VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X12 a_828_987# D VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X13 CLKN CLK VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.81442p ps=15.045u w=1.02u l=0.28u
+X14 VDD in2 out2 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X15 Q a_2849_203r# VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X16 in2 CLKb a_2091_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.53235p ps=3.25u w=1.02u l=0.28u
+X17 VDD CLK CLKN VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X18 in2 CLKN a_913_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.52065p ps=3.23u w=1.02u l=0.28u
+X19 VDD a_2849_203r# Q VDD pfet_03v3 ad=6.973p pd=42.83u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X20 a_2091_203r# out2 VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.41237p ps=12.895u w=1.02u l=0.28u
+X21 a_2849_203r# out2 VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.41237p ps=12.895u w=1.02u l=0.28u
+X22 CLKb CLKN VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X23 CLKb CLKN VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=2.81442p ps=15.045u w=1.02u l=0.28u
+X24 in2 CLKN a_2044_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X25 out2 in2 VSS VSS nfet_03v3 ad=0.3087p pd=2.015u as=2.81442p ps=15.045u w=1.02u l=0.28u
+X26 in2 CLKb a_828_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+.ends
+

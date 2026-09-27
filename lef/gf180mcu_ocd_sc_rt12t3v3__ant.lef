@@ -1,0 +1,52 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gf180mcu_ocd_sc_rt12t3v3__ant
+  CLASS CORE ANTENNACELL ;
+  FOREIGN gf180mcu_ocd_sc_rt12t3v3__ant ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.680 BY 6.720 ;
+  SYMMETRY X Y ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.544950 ;
+    PORT
+      LAYER Metal1 ;
+        RECT 0.430 4.995 0.755 6.050 ;
+        RECT 0.430 1.745 0.690 4.995 ;
+        RECT 0.430 0.590 0.755 1.745 ;
+    END
+  END A
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Nwell ;
+        RECT -0.610 3.245 2.290 7.330 ;
+      LAYER Metal1 ;
+        RECT -0.115 6.420 1.795 7.020 ;
+        RECT -0.115 3.745 0.115 6.420 ;
+        RECT 1.565 3.750 1.795 6.420 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Pwell ;
+        RECT -0.180 -0.180 1.860 2.815 ;
+        RECT 0.000 -0.300 1.680 -0.180 ;
+      LAYER Metal1 ;
+        RECT -0.115 0.300 0.115 2.410 ;
+        RECT 1.565 0.300 1.795 2.410 ;
+        RECT -0.115 -0.300 1.795 0.300 ;
+    END
+  END VSS
+END gf180mcu_ocd_sc_rt12t3v3__ant
+END LIBRARY
+

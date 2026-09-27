@@ -1,0 +1,51 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO gf180mcu_ocd_sc_rt12t3v3__decap_4
+  CLASS CORE SPACER ;
+  FOREIGN gf180mcu_ocd_sc_rt12t3v3__decap_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 2.240 BY 6.720 ;
+  SYMMETRY X Y ;
+  SITE unithd ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Nwell ;
+        RECT -0.610 3.245 2.850 7.330 ;
+      LAYER Metal1 ;
+        RECT -0.115 6.420 2.355 7.020 ;
+        RECT -0.115 3.745 0.115 6.420 ;
+        RECT 0.355 4.580 0.585 6.420 ;
+        RECT 2.125 3.750 2.355 6.420 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER Pwell ;
+        RECT -0.180 -0.180 2.420 2.815 ;
+        RECT 0.000 -0.300 2.240 -0.180 ;
+      LAYER Metal1 ;
+        RECT -0.115 0.300 0.115 2.410 ;
+        RECT 0.515 0.300 1.695 0.585 ;
+        RECT 2.125 0.300 2.355 2.410 ;
+        RECT -0.115 -0.300 2.355 0.300 ;
+    END
+  END VSS
+  OBS
+      LAYER Metal1 ;
+        RECT 0.395 3.995 1.170 4.345 ;
+        RECT 0.395 1.500 0.625 3.995 ;
+        RECT 1.405 2.285 1.635 6.180 ;
+        RECT 0.880 2.055 1.895 2.285 ;
+        RECT 0.395 1.120 1.345 1.500 ;
+  END
+END gf180mcu_ocd_sc_rt12t3v3__decap_4
+END LIBRARY
+

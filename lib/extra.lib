@@ -1,0 +1,284 @@
+/* SPDX-FileCopyrightText: 2026 Open Circuit Design, LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/*
+ * Library:  gf180mcu_ocd_sc_rt12t3v3
+ * Corner: tt_025C_3v30 (typical/typical/typical)
+ *
+ * This is a radiation-tolerant 3.3V standard cell library for the GF180MCU
+ * open PDK.
+ */
+    
+library (gf180mcu_ocd_sc_rt12t3v3__tt_025C_3v30) {
+  delay_model : "table_lookup";
+  technology ( \
+    "cmos" \
+  );
+  capacitive_load_unit ( \
+    1.0, \
+    "pf" \
+  );
+  current_unit : "1mA";
+  leakage_power_unit : "1nW";
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  pulling_resistance_unit : "1ohm";
+  nom_process : 1.0;
+  nom_temperature : 25.0;
+  nom_voltage : 3.3;
+  default_operating_conditions : "tt_025C_3v30";
+  library_features (report_delay_calculation, report_power_calculation);
+  voltage_map (VDD, 3.3);
+  voltage_map (VSS, 0);
+  input_threshold_pct_fall : 50.0;
+  input_threshold_pct_rise : 50.0;
+  output_threshold_pct_fall : 50.0;
+  output_threshold_pct_rise : 50.0;
+  slew_derate_from_library : 0.5;
+  slew_lower_threshold_pct_fall : 30.0;
+  slew_lower_threshold_pct_rise : 30.0;
+  slew_upper_threshold_pct_fall : 70.0;
+  slew_upper_threshold_pct_rise : 70.0;
+  default_cell_leakage_power : 0;
+  default_fanout_load : 1;
+  default_inout_pin_cap : 0;
+  default_input_pin_cap : 0;
+  default_max_transition : 1.5;
+  default_output_pin_cap : 0;
+  default_arc_mode : "worst_edges";
+  default_constraint_arc_mode : "worst";
+  default_output_pin_cap : 0;
+  in_place_swap_mode : "match_footprint";
+  operating_conditions ("tt_025C_3v30") {
+    process : 1.0;
+    temperature : 25.0;
+    voltage : 3.3;
+    tree_type : "balanced_tree";
+    process_corner : "Typical";
+  }
+  lu_table_template (delay_template_7x7) {
+    variable_1 : total_output_net_capacitance;
+    variable_2 : input_net_transition;
+    index_1 ( \
+      "1000.000000, 1001.000000, 1002.000000, 1003.000000, 1004.000000, 1005.000000, 1006.000000" \
+    );
+    index_2 ( \
+      "1000.000000, 1001.000000, 1002.000000, 1003.000000, 1004.000000, 1005.000000, 1006.000000" \
+    );
+  }
+  power_lut_template (energy_template_7x7) {
+    variable_1 : total_output_net_capacitance;
+    variable_2 : input_transition_time;
+    index_1 ( \
+      "1000.000000, 1001.000000, 1002.000000, 1003.000000, 1004.000000, 1005.000000, 1006.000000" \
+    );
+    index_2 ( \
+      "1000.000000, 1001.000000, 1002.000000, 1003.000000, 1004.000000, 1005.000000, 1006.000000" \
+    );
+  }
+  lu_table_template (setup_template_3x7) {
+    variable_1 : related_pin_transition;
+    variable_2 : constrained_pin_transition;
+    index_1 ( \
+      "1000.000000, 1001.000000, 1002.000000" \
+    );
+    index_2 ( \
+      "1000.000000, 1001.000000, 1002.000000, 1003.000000, 1004.000000, 1005.000000, 1006.000000" \
+    );
+  }
+  lu_table_template (hold_template_3x7) {
+    variable_1 : related_pin_transition;
+    variable_2 : constrained_pin_transition;
+    index_1 ( \
+      "1000.000000, 1001.000000, 1002.000000" \
+    );
+    index_2 ( \
+      "1000.000000, 1001.000000, 1002.000000, 1003.000000, 1004.000000, 1005.000000, 1006.000000" \
+    );
+  }
+
+  cell (gf180mcu_ocd_sc_rt12t3v3__tiel) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__tiel;
+	area : 8.780800;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+		
+	pin(Y) {
+		direction : output;
+		function : "0";
+		related_ground_pin : VSS;
+		related_power_pin : VDD;
+		max_capacitance : 1.0;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__tieh) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__tieh;
+	area : 8.780800;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+		
+	pin(Y) {
+		direction : output;
+		function : "1";
+		related_ground_pin : VSS;
+		related_power_pin : VDD;
+		max_capacitance : 1.0;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__ant) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__diode;
+	area : 4.390400;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+		
+	pin(A) {
+		direction : input;
+		related_ground_pin : VSS;
+		related_power_pin : VDD;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__fill_1) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
+	area: 2.195200;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__fill_2) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
+	area: 4.390400;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__fill_4) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
+	area: 8.780800;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__fill_8) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__fill;
+	area: 17.561600;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+	
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__decap_4) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__decap;
+	area: 8.780800;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__decap_8) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__decap;
+	area: 17.561600;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+	
+  cell (gf180mcu_ocd_sc_rt12t3v3__decap_16) {
+	cell_footprint : gf180mcu_ocd_sc_rt12t3v3__decap;
+	area: 35.123200;
+		
+	pg_pin(VDD) {
+		voltage_name : VDD;
+		pg_type : primary_power;
+	}
+		
+	pg_pin(VSS) {
+		voltage_name : VSS;
+		pg_type : primary_ground;
+	}
+  }
+}

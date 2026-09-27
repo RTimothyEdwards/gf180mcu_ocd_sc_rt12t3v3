@@ -1,15 +1,11 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1784912080
+timestamp 1789659798
 << nwell >>
 rect -132 649 2688 1466
 << pwell >>
-rect -36 400 2612 563
-rect -36 150 1745 400
-rect 1798 154 1821 400
-rect 1925 150 2612 400
-rect -36 -36 2612 150
+rect -36 -36 2612 563
 << nmos >>
 tri 201 319 259 377 se
 rect 259 321 377 377
@@ -891,4 +887,7 @@ flabel metal1 s 2090 639 2390 705 0 FreeSans 320 180 0 0 B
 port 2 nsew signal input
 << properties >>
 string FIXED_BBOX 0 0 2576 1344
+string LEFclass CORE
+string LEFsite unithd
+string LEFsymmetry X Y
 << end >>
