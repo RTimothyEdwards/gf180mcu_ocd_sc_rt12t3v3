@@ -33,6 +33,8 @@ and individuals looking to design custom ASICs for Cubesat projects.
 
 ---------------------------------
 
-This repository was created on July 10, 2026 and is currently a work
-in progress.  As long as this notice exists, the library is not in
-a complete enough state to use for circuit synthesis.
+This repository was created on July 10, 2026 and is currently has a
+sufficient number of defined cells to be able to be used in
+synthesis.  A more complete set of cells would be useful and will
+be added as time permits.
+
