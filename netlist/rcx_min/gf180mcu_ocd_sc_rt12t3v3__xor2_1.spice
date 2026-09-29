@@ -1,0 +1,46 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__xor2_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__xor2_1 A B Y VDD VSS
+X0 a_1317_987# A VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 VDD A AN VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X2 Y AN a_540_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X3 a_830_145# AN Y VSS nfet_03v3 ad=0.52065p pd=3.23u as=0.3087p ps=2.01u w=1.02u l=0.28u
+X4 a_540_987# B VDD VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X5 AN A VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=3.00385p ps=16.695u w=1.02u l=0.28u
+X6 a_540_987# AN Y VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X7 Y BN a_1317_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X8 BN B VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=4.00512p ps=22.26u w=1.02u l=0.28u
+X9 BN B VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X10 a_1417_203r# A VSS VSS nfet_03v3 ad=0.3087p pd=2.015u as=3.00385p ps=16.695u w=1.02u l=0.28u
+X11 a_1317_987# BN Y VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X12 Y B a_1417_203r# VSS nfet_03v3 ad=0.3087p pd=2.01u as=0.5148p ps=3.22u w=1.02u l=0.28u
+X13 AN A VDD VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X14 VDD B a_540_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X15 VDD A a_1317_987# VDD pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X16 a_830_145# BN VSS VSS nfet_03v3 ad=0.3087p pd=2.01u as=4.00512p ps=22.26u w=1.02u l=0.28u
+X17 VDD B BN VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+C0 a_1417_203r# Y 0.10873f
+C1 a_540_987# Y 0.11326f
+C2 VDD AN 0.6654f
+C3 A VDD 0.67891f
+C4 B BN 0.77555f
+C5 B Y 0.53386f
+C6 VDD BN 0.73832f
+C7 VDD Y 0.17426f
+C8 a_1317_987# VDD 0.41649f
+C9 A AN 0.67522f
+C10 a_540_987# B 0.12779f
+C11 a_540_987# VDD 0.42819f
+C12 AN Y 0.23741f
+C13 A BN 0.42678f
+C14 A Y 0.58308f
+C15 B VDD 0.81784f
+C16 A a_1317_987# 0.13591f
+C17 BN Y 0.1672f
+C18 a_1317_987# Y 0.14001f
+C19 Y VSS 1.01125f
+C20 VDD VSS 8.31785f
+C21 a_1317_987# VSS 0.78075f
+C22 a_540_987# VSS 0.77523f
+.ends
+

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1784824835
+timestamp 1790641828
 << nwell >>
 rect -122 649 570 1466
 << pwell >>
@@ -244,6 +244,7 @@ port 1 nsew power bidirectional abutment
 << properties >>
 string FIXED_BBOX 0 0 448 1344
 string LEFclass CORE SPACER
-string LEFsymmetry X Y
 string LEFsite unithd
+string LEFsymmetry X Y
+string MASKHINTS_NPLUS 54 101 394 423
 << end >>

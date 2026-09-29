@@ -1,0 +1,39 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__buf_2.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__buf_2 A Y VDD VSS
+X0 VDD.t2 A.t1 a_193_203r# VDD.t1 pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 Y.t0 a_193_203r# VDD VDD.t5 pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X2 Y a_193_203r# VSS VSS.t2 nfet_03v3 ad=0.3087p pd=2.01u as=2.49132p ps=12.92u w=1.02u l=0.28u
+X3 VDD a_193_203r# Y.t0 VDD pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X4 Y a_193_203r# VSS VSS.t1 nfet_03v3 ad=0.3087p pd=2.01u as=2.49132p ps=12.92u w=1.02u l=0.28u
+X5 Y.t0 a_193_203r# VDD.t2 VDD.t3 pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X6 a_193_203r# A.t2 VDD VDD.t0 pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X7 VDD a_193_203r# Y.t0 VDD.t4 pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X8 a_193_203r# A.t0 VSS VSS.t0 nfet_03v3 ad=0.3087p pd=2.01u as=3.73697p ps=19.385u w=1.02u l=0.28u
+R0 Y Y.t0 1.37121
+R1 A.n0 A.t1 5.5005
+R2 A.n0 A.t2 2.64336
+R3 A.n0 A.t0 1.51677
+R4 A A.t0 0.0005
+R5 VDD VDD.t5 49.9793
+R6 VDD VDD.t1 22.3421
+R7 VDD VDD.t3 22.3421
+R8 VDD VDD.t4 13.4072
+R9 VDD VDD.t0 13.4061
+R10 VDD VDD.t2 1.12395
+R11 VSS.t0 VSS 121.594
+R12 VSS VSS.t2 86.5587
+R13 VSS VSS.t1 37.9913
+C0 A a_193_203r# 0.26923f
+C1 Y a_193_203r# 0.39759f
+C2 VDD A 0.36597f
+C3 Y VDD 0.41759f
+C4 VDD a_193_203r# 0.79597f
+C5 Y VSS 0.7675f
+C6 A VSS 0.5056f
+C7 VDD VSS 5.73042f
+C8 a_193_203r# VSS 0.15834f
+C9 A.n0 VSS 0.21183f
+C10 Y.t0 VSS 0.64254f
+.ends
+

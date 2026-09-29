@@ -1,0 +1,15 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__decap_4.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__decap_4 VDD VSS
+X0 a_146_799# a_56_147.t1 VSS VSS.t0 nfet_03v3 ad=0.35p pd=2.15u as=3.935p ps=20.89u w=1.09u l=0.28u
+X1 a_56_147.t0 a_146_799# VDD.t1 VDD.t0 pfet_03v3 ad=0.9178p pd=4.57u as=4.38315p ps=21.8u w=1.765u l=0.53u
+R0 VDD.t0 VDD.t1 32.6455
+R1 VDD VDD.t0 0.0005
+R2 VSS VSS.t0 129.523
+R3 a_56_147.t0 a_56_147.t1 1.50425
+C0 a_146_799# VDD 0.27084f
+C1 VDD VSS 1.94018f
+C2 a_56_147.t0 VSS 0.37261f
+C3 VDD.t1 VSS 0.70332f
+.ends
+

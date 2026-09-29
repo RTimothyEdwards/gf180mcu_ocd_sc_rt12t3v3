@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1784764939
+timestamp 1790641828
 << nwell >>
 rect -132 649 1904 1466
 << pwell >>
@@ -595,6 +595,7 @@ flabel metal1 1691 502 1691 502 0 FreeSans 320 90 0 0 EN_BAR
 << properties >>
 string FIXED_BBOX 0 0 1792 1344
 string LEFclass CORE
-string LEFsymmetry X Y
 string LEFsite unithd
+string LEFsymmetry X Y
+string MASKHINTS_NPLUS 109 101 1637 425
 << end >>

@@ -1,7 +1,7 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1784844588
+timestamp 1790641828
 << nwell >>
 rect -132 649 3024 1466
 << pwell >>
@@ -1023,6 +1023,7 @@ port 4 nsew signal output
 << properties >>
 string FIXED_BBOX 0 0 2912 1344
 string LEFclass CORE
-string LEFsymmetry X Y
 string LEFsite unithd
+string LEFsymmetry X Y
+string MASKHINTS_NPLUS 106 99 2757 425
 << end >>

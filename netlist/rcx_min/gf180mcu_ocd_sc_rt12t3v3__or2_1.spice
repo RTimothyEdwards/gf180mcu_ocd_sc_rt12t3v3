@@ -1,0 +1,48 @@
+* NGSPICE file created from gf180mcu_ocd_sc_rt12t3v3__or2_1.ext - technology: gf180mcuD
+
+.subckt gf180mcu_ocd_sc_rt12t3v3__or2_1 A B Y VDD VSS
+X0 a_92_987.t1 B.t1 VDD VDD.t1 pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X1 a_193_203r# A.t0 VSS VSS.t1 nfet_03v3 ad=0.3087p pd=2.01u as=2.59775p ps=13.675u w=1.02u l=0.28u
+X2 VDD a_193_203r# Y VDD.t5 pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X3 a_193_203r# A.t2 a_92_987.t1 VDD.t2 pfet_03v3 ad=0.3341p pd=1.805u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X4 VDD B.t2 a_92_987.t0 VDD.t0 pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X5 a_92_987.t1 A.t1 a_193_203r# VDD.t3 pfet_03v3 ad=0.5654p pd=3.45u as=0.3341p ps=1.805u w=1.285u l=0.28u
+X6 Y a_193_203r# VDD VDD.t4 pfet_03v3 ad=0.3341p pd=1.805u as=0.5654p ps=3.45u w=1.285u l=0.28u
+X7 Y.t0 a_193_203r# VSS VSS.t2 nfet_03v3 ad=0.3087p pd=2.01u as=2.59775p ps=13.675u w=1.02u l=0.28u
+X8 a_193_203r# B.t0 VSS VSS.t0 nfet_03v3 ad=0.3087p pd=2.01u as=2.59775p ps=13.675u w=1.02u l=0.28u
+R0 Y Y.t0 1.46993
+R1 A.t0 A.n0 2.43989
+R2 A.n0 A.t1 5.5005
+R3 A.n0 A.t2 2.64336
+R4 A A.t0 0.0005
+R5 B.n0 B.t1 5.5005
+R6 B.n0 B.t2 2.64336
+R7 B B.n0 2.24146
+R8 B B.t0 1.11244
+R9 VDD VDD.t1 22.3695
+R10 VDD VDD.t2 22.3695
+R11 VDD VDD.t4 22.3695
+R12 VDD VDD.t0 13.4225
+R13 VDD VDD.t3 13.4225
+R14 VDD VDD.t5 13.4225
+R15 VSS VSS.t1 119.132
+R16 VSS.t0 VSS 121.422
+R17 VSS VSS.t2 113.564
+R18 a_92_987.t1 a_92_987.t0 1.0157
+C0 VDD Y 0.27994f
+C1 VDD a_193_203r# 0.40644f
+C2 VDD A 0.31848f
+C3 Y a_193_203r# 0.27107f
+C4 B VDD 0.46689f
+C5 A a_193_203r# 0.318f
+C6 Y VSS 0.97596f
+C7 A VSS 0.37449f
+C8 B VSS 0.8004f
+C9 VDD VSS 6.39013f
+C10 a_193_203r# VSS 0.12423f
+C11 a_92_987.t1 VSS 0.68346f
+C12 a_92_987.t0 VSS 0.23273f
+C13 A.n0 VSS 0.3872f
+C14 Y.t0 VSS 0.23117f
+.ends
+

@@ -5,6 +5,8 @@
 echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
 echo ${PDK:=gf180mcuD} > /dev/null
 
+mkdir -p drc
+
 for filename in ../magic/gf180mcu_ocd_sc_*.mag; do
     if [ -f "$filename" ]; then
         cellname=$(basename "$filename" .mag)
@@ -15,9 +17,9 @@ for filename in ../magic/gf180mcu_ocd_sc_*.mag; do
 EOF
 	mv ${cellname}.gds ../gds/
         echo "Running DRC on: ${cellname}.gds"
-	klayout -b -zz -r ${PDK_ROOT}/${PDK}/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/${cellname}.gds -rd report=${cellname}_drc_klayout.lyrdb -rd feol=True -rd beol=True -rd conn_drc=True -rd wedge=True -rd run_mode=deep -rd thr=$(nproc) -rd topcell=${cellname}
+	klayout -b -zz -r ${PDK_ROOT}/${PDK}/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/${cellname}.gds -rd report=../validate/drc/${cellname}_drc_klayout.lyrdb -rd feol=True -rd beol=True -rd conn_drc=True -rd wedge=True -rd run_mode=deep -rd thr=$(nproc) -rd topcell=${cellname}
 	# klayout keeps writing output both here and in ../gds/.  Keep the one here
-	rm ../gds/${cellname}_drc_klayout.lyrdb
+	# rm ../gds/${cellname}_drc_klayout.lyrdb
     fi
 done
 echo "Done!"
