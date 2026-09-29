@@ -14,12 +14,25 @@ set ::env(LIB) [dict create]
 dict set ::env(LIB) *_tt_025C_3v30 "\
     $::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/$::env(STD_CELL_LIBRARY)__tt_025C_3v30.lib\
 "
+dict set ::env(LIB) *_ff_n40C_3v60 "\
+    $::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/$::env(STD_CELL_LIBRARY)__ff_n40C_3v60.lib\
+"
+dict set ::env(LIB) *_ss_125C_3v00 "\
+    $::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/$::env(STD_CELL_LIBRARY)__ss_125C_3v00.lib\
+"
 
 # Corners
 set ::env(STA_CORNERS) "\
     nom_tt_025C_3v30 \
+    min_tt_025C_3v30 \
+    max_tt_025C_3v30 \
+    nom_ff_n40C_3v60 \
+    min_ff_n40C_3v60 \
+    max_ff_n40C_3v60 \
+    nom_ss_125C_3v00 \
+    min_ss_125C_3v00 \
+    max_ss_125C_3v00 \
 "
-
 set ::env(DEFAULT_CORNER) "nom_tt_025C_3v30"
 
 # Technology LEF (override gf180mcu defaults)
@@ -34,10 +47,7 @@ set ::env(CELL_CDLS)	""
 set ::env(PLACE_SITE) "unithd"
 
 # welltap and endcap cell
-# set ::env(FP_WELLTAP_CELL) "$::env(STD_CELL_LIBRARY)__filltie"
-# set ::env(FP_ENDCAP_CELL) "$::env(STD_CELL_LIBRARY)__endcap"
-set ::env(WELLTAP_CELL) "$::env(STD_CELL_LIBRARY)__fill_1"
-set ::env(ENDCAP_CELL) "$::env(STD_CELL_LIBRARY)__fill_1"
+# (All cells have substrate and well ties internally)
 
 # defaults (can be overridden by designs):
 set ::env(SYNTH_DRIVING_CELL) "$::env(STD_CELL_LIBRARY)__inv_1/Y"
