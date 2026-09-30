@@ -35,10 +35,6 @@ set ::env(STA_CORNERS) "\
 "
 set ::env(DEFAULT_CORNER) "nom_tt_025C_3v30"
 
-# Technology LEF (override gf180mcu defaults)
-set ::env(TECH_LEFS) [dict create]
-dict set ::env(TECH_LEFS) nom_* [glob "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/techlef/*__nom.tlef"]
-
 set ::env(CELL_CDLS)	""
 
 # Placement site for core cells
