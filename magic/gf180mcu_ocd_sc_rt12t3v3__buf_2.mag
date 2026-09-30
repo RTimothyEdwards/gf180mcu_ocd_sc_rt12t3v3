@@ -1,10 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1790641828
+timestamp 1790772139
 << nwell >>
 rect -122 649 1354 1466
-rect -122 648 822 649
 << pwell >>
 rect -36 -36 1268 563
 rect 0 -60 832 -36
