@@ -1,9 +1,9 @@
 magic
 tech gf180mcuD
 magscale 1 10
-timestamp 1790641828
+timestamp 1790872527
 << nwell >>
-rect -90 649 8442 1466
+rect -122 649 8410 1466
 << pwell >>
 rect -36 -36 8324 563
 << nmos >>
@@ -2287,6 +2287,7 @@ rect 7130 469 7142 475
 rect 6292 426 6358 430
 rect 6410 426 6422 430
 rect 4764 411 4790 418
+rect 4842 411 4862 418
 rect 4764 399 4842 411
 rect 4764 383 4828 399
 rect 2490 285 2722 288
@@ -2808,5 +2809,6 @@ string FIXED_BBOX 0 0 8288 1344
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y
-string MASKHINTS_NPLUS 71 101 8147 425
+string MASKHINTS_NPLUS -42 717 8330 797 71 101 8147 425
+string MASKHINTS_PPLUS -32 501 8324 581
 << end >>

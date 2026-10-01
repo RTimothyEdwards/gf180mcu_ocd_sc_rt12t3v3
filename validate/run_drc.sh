@@ -2,10 +2,11 @@
 #
 # Run klayout DRC on all of the standard cells
 
-echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
-echo ${PDK:=gf180mcuD} > /dev/null
+export PDK_ROOT=${PDK_ROOT-=/usr/share/pdk}
+export PDK=${PDK-=gf180mcuD}
 
 mkdir -p drc
+touch drc/drc_summary.log
 
 for filename in ../magic/gf180mcu_ocd_sc_*.mag; do
     if [ -f "$filename" ]; then
@@ -17,10 +18,18 @@ for filename in ../magic/gf180mcu_ocd_sc_*.mag; do
 EOF
 	mv ${cellname}.gds ../gds/
         echo "Running DRC on: ${cellname}.gds"
-	klayout -b -zz -r ${PDK_ROOT}/${PDK}/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/${cellname}.gds -rd report=../validate/drc/${cellname}_drc_klayout.lyrdb -rd feol=True -rd beol=True -rd conn_drc=True -rd wedge=True -rd run_mode=deep -rd thr=$(nproc) -rd topcell=${cellname}
+        echo "Running DRC on: ${cellname}.gds" >> drc/drc_summary.log
+	klayout -b -zz -r ${PDK_ROOT}/${PDK}/libs.tech/klayout/tech/drc/gf180mcu.drc -rd input=../gds/${cellname}.gds -rd report=../validate/drc/${cellname}_drc_klayout.lyrdb -rd feol=True -rd beol=True -rd conn_drc=True -rd wedge=True -rd run_mode=deep -rd thr=$(nproc) -rd topcell=${cellname} | grep violation >> drc/drc_summary.log
 	# klayout keeps writing output both here and in ../gds/.  Keep the one here
 	# rm ../gds/${cellname}_drc_klayout.lyrdb
     fi
 done
+echo ""
+echo "--------------------"
+echo "DRC summary results:"
+echo "--------------------"
+echo ""
+cat drc/drc_summary.log
+echo ""
 echo "Done!"
 exit 0

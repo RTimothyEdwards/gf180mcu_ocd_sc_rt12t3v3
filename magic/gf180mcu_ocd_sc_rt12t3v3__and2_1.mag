@@ -477,5 +477,6 @@ string FIXED_BBOX 0 0 1232 1344
 string LEFclass CORE
 string LEFsite unithd
 string LEFsymmetry X Y
-string MASKHINTS_NPLUS 91 101 1175 425
+string MASKHINTS_NPLUS 91 101 1175 425 -42 717 1274 797
+string MASKHINTS_PPLUS -36 501 1268 581
 << end >>

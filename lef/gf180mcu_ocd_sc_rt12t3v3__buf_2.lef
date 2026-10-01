@@ -41,7 +41,6 @@ MACRO gf180mcu_ocd_sc_rt12t3v3__buf_2
     PORT
       LAYER Nwell ;
         RECT -0.610 3.245 6.770 7.330 ;
-        RECT -0.610 3.240 4.110 3.245 ;
       LAYER Metal1 ;
         RECT -0.115 6.420 6.275 7.020 ;
         RECT -0.115 3.750 0.115 6.420 ;

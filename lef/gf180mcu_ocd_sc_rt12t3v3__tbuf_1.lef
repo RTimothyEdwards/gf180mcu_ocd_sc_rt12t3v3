@@ -51,7 +51,7 @@ MACRO gf180mcu_ocd_sc_rt12t3v3__tbuf_1
     SHAPE ABUTMENT ;
     PORT
       LAYER Nwell ;
-        RECT -0.660 3.245 9.520 7.330 ;
+        RECT -0.610 3.245 9.570 7.330 ;
       LAYER Metal1 ;
         RECT -0.115 6.420 9.075 7.020 ;
         RECT -0.115 3.750 0.115 6.420 ;
