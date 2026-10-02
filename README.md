@@ -1,6 +1,10 @@
----------------------------------------------
+----------------------------------------------------------
 gf180mcu_ocd_sc_rt12t3v3
----------------------------------------------
+----------------------------------------------------------
+3.3V radiation-tolerant standard cell library for GF180MCU
+Version 1.0
+October 2, 2026
+Open Circuit Design
 
 This is a standard cell library for the GF180MCU process and open PDK,
 largely based on the Avalon Semiconductors 3.3V standard cell library
@@ -31,10 +35,14 @@ larger feature size of the process means lower cost to get to silicon,
 and so this library is provided especially for students, organizations,
 and individuals looking to design custom ASICs for Cubesat projects.
 
----------------------------------
+----------------------------------------------------------------------
 
-This repository was created on July 10, 2026 and is currently has a
-sufficient number of defined cells to be able to be used in
-synthesis.  A more complete set of cells would be useful and will
-be added as time permits.
+This repository was created on July 10, 2026 and as of the official
+release on October 2, 2026, it currently has a sufficient number of
+defined cells to be able to be used in synthesis.  A more complete set
+of cells would be useful and will be added as time permits.
 
+Acknowledgement to Don Nguyen for contributing to the successful
+roll-out of this standard cell library, getting "lctime" running
+and configured correctly for the project, and for running simulations
+to characterize the library.
