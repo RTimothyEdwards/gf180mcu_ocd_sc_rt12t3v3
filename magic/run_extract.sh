@@ -3,8 +3,8 @@
 # Run extraction on all standard cell layouts
 #     extracts the layout into ../netlist/layout/<cellname>.spice
 #
-echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
-echo ${PDK:=gf180mcuD} > /dev/null
+export PDK_ROOT=${PDK_ROOT:-/usr/share/pdk}
+export PDK=${PDK:-gf180mcuD}
 mkdir -p ../netlist/layout
 
 for filename in ../magic/*.mag; do

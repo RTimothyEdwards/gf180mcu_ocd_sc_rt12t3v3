@@ -4,8 +4,9 @@
 # Minimum corner
 #     extracts the layout into ../netlist/rcx_min/<cellname>.spice
 #
-echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
-echo ${PDK:=gf180mcuD} > /dev/null
+export PDK_ROOT=${PDK_ROOT:-/usr/share/pdk}
+export PDK=${PDK:-gf180mcuD}
+
 mkdir -p ../netlist/rcx_min
 
 for filename in ../magic/*.mag; do

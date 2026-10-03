@@ -4,8 +4,9 @@
 # Nominal corner
 #     extracts the layout into ../netlist/rcx_nom/<cellname>.spice
 #
-echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
-echo ${PDK:=gf180mcuD} > /dev/null
+export PDK_ROOT=${PDK_ROOT:-/usr/share/pdk}
+export PDK=${PDK:-gf180mcuD}
+
 mkdir -p ../netlist/rcx_nom
 
 for filename in ../magic/*.mag; do

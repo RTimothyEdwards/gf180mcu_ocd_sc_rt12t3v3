@@ -5,8 +5,8 @@
 # (2) extracts the layout into ../netlist/layout/<cellname>.spice
 # (3) runs LVS and produces <cellname>_comp.out
 #
-echo ${PDK_ROOT:=/usr/share/pdk} > /dev/null
-echo ${PDK:=gf180mcuD} > /dev/null
+export PDK_ROOT=${PDK_ROOT:-/usr/share/pdk}
+export PDK=${PDK:-gf180mcuD}
 
 for filename in ../magic/gf180mcu_ocd_sc_*.mag; do
     if [ -f "$filename" ]; then
