@@ -1,104 +1,52 @@
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__and2_1.gds
-2026-10-03 10:35:10 -0400: Memory Usage (433352K) : DRC RESULT: FAILURE (44 violation(s))
-2026-10-03 10:35:10 -0400: Memory Usage (433352K) :   'CO.5b'              :    43 violation(s)
-2026-10-03 10:35:10 -0400: Memory Usage (433352K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:05:57 -0400: Memory Usage (434792K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__ant.gds
-2026-10-03 10:35:12 -0400: Memory Usage (431872K) : DRC RESULT: SUCCESS (0 violations)
+2026-10-16 10:06:00 -0400: Memory Usage (433340K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__buf_1.gds
-2026-10-03 10:35:16 -0400: Memory Usage (433708K) : DRC RESULT: FAILURE (35 violation(s))
-2026-10-03 10:35:16 -0400: Memory Usage (433708K) :   'CO.5b'              :    34 violation(s)
-2026-10-03 10:35:16 -0400: Memory Usage (433708K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:03 -0400: Memory Usage (433176K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__buf_2.gds
-2026-10-03 10:35:19 -0400: Memory Usage (433724K) : DRC RESULT: FAILURE (39 violation(s))
-2026-10-03 10:35:19 -0400: Memory Usage (433724K) :   'CO.5b'              :    38 violation(s)
-2026-10-03 10:35:19 -0400: Memory Usage (433724K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:07 -0400: Memory Usage (433700K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__decap_4.gds
-2026-10-03 10:35:22 -0400: Memory Usage (433468K) : DRC RESULT: FAILURE (66 violation(s))
-2026-10-03 10:35:22 -0400: Memory Usage (433468K) :   'CO.5a'              :    32 violation(s)
-2026-10-03 10:35:22 -0400: Memory Usage (433468K) :   'CO.5b'              :    32 violation(s)
-2026-10-03 10:35:22 -0400: Memory Usage (433468K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:06:10 -0400: Memory Usage (433640K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__dff_1.gds
-2026-10-03 10:35:25 -0400: Memory Usage (437248K) : DRC RESULT: FAILURE (240 violation(s))
-2026-10-03 10:35:25 -0400: Memory Usage (437248K) :   'CO.5a'              :   125 violation(s)
-2026-10-03 10:35:25 -0400: Memory Usage (437248K) :   'CO.5b'              :   113 violation(s)
-2026-10-03 10:35:25 -0400: Memory Usage (437248K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:06:14 -0400: Memory Usage (438112K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__dffn_1.gds
-2026-10-03 10:35:28 -0400: Memory Usage (437236K) : DRC RESULT: FAILURE (240 violation(s))
-2026-10-03 10:35:28 -0400: Memory Usage (437236K) :   'CO.5a'              :   125 violation(s)
-2026-10-03 10:35:28 -0400: Memory Usage (437236K) :   'CO.5b'              :   113 violation(s)
-2026-10-03 10:35:28 -0400: Memory Usage (437236K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:06:17 -0400: Memory Usage (437524K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__dffsr_1.gds
-2026-10-03 10:35:32 -0400: Memory Usage (439676K) : DRC RESULT: FAILURE (153 violation(s))
-2026-10-03 10:35:32 -0400: Memory Usage (439676K) :   'CO.5b'              :   152 violation(s)
-2026-10-03 10:35:32 -0400: Memory Usage (439676K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:21 -0400: Memory Usage (438320K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__dlat_1.gds
-2026-10-03 10:35:35 -0400: Memory Usage (436516K) : DRC RESULT: FAILURE (174 violation(s))
-2026-10-03 10:35:35 -0400: Memory Usage (436516K) :   'CO.5a'              :    88 violation(s)
-2026-10-03 10:35:35 -0400: Memory Usage (436516K) :   'CO.5b'              :    84 violation(s)
-2026-10-03 10:35:35 -0400: Memory Usage (436516K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:06:25 -0400: Memory Usage (436812K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__dlatn_1.gds
-2026-10-03 10:35:39 -0400: Memory Usage (435828K) : DRC RESULT: FAILURE (174 violation(s))
-2026-10-03 10:35:39 -0400: Memory Usage (435828K) :   'CO.5a'              :    88 violation(s)
-2026-10-03 10:35:39 -0400: Memory Usage (435828K) :   'CO.5b'              :    84 violation(s)
-2026-10-03 10:35:39 -0400: Memory Usage (435828K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:06:28 -0400: Memory Usage (435456K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__fill_1.gds
-2026-10-03 10:35:42 -0400: Memory Usage (432940K) : DRC RESULT: SUCCESS (0 violations)
+2026-10-16 10:06:31 -0400: Memory Usage (431700K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__fill_2.gds
-2026-10-03 10:35:45 -0400: Memory Usage (432100K) : DRC RESULT: SUCCESS (0 violations)
+2026-10-16 10:06:34 -0400: Memory Usage (433536K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__fill_4.gds
-2026-10-03 10:35:48 -0400: Memory Usage (433684K) : DRC RESULT: SUCCESS (0 violations)
+2026-10-16 10:06:37 -0400: Memory Usage (432400K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__inv_1.gds
-2026-10-03 10:35:51 -0400: Memory Usage (433408K) : DRC RESULT: FAILURE (72 violation(s))
-2026-10-03 10:35:51 -0400: Memory Usage (433408K) :   'CO.5a'              :    34 violation(s)
-2026-10-03 10:35:51 -0400: Memory Usage (433408K) :   'CO.5b'              :    36 violation(s)
-2026-10-03 10:35:51 -0400: Memory Usage (433408K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:06:41 -0400: Memory Usage (433920K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__inv_2.gds
-2026-10-03 10:35:55 -0400: Memory Usage (433712K) : DRC RESULT: FAILURE (35 violation(s))
-2026-10-03 10:35:55 -0400: Memory Usage (433712K) :   'CO.5b'              :    34 violation(s)
-2026-10-03 10:35:55 -0400: Memory Usage (433712K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:44 -0400: Memory Usage (433060K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__inv_4.gds
-2026-10-03 10:35:58 -0400: Memory Usage (434444K) : DRC RESULT: FAILURE (43 violation(s))
-2026-10-03 10:35:58 -0400: Memory Usage (434444K) :   'CO.5b'              :    42 violation(s)
-2026-10-03 10:35:58 -0400: Memory Usage (434444K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:47 -0400: Memory Usage (434924K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__maj3_1.gds
-2026-10-03 10:36:01 -0400: Memory Usage (435548K) : DRC RESULT: FAILURE (75 violation(s))
-2026-10-03 10:36:01 -0400: Memory Usage (435548K) :   'CO.5b'              :    74 violation(s)
-2026-10-03 10:36:01 -0400: Memory Usage (435548K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:50 -0400: Memory Usage (436224K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__nand2_1.gds
-2026-10-03 10:36:04 -0400: Memory Usage (433192K) : DRC RESULT: FAILURE (39 violation(s))
-2026-10-03 10:36:04 -0400: Memory Usage (433192K) :   'CO.5b'              :    38 violation(s)
-2026-10-03 10:36:04 -0400: Memory Usage (433192K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:54 -0400: Memory Usage (433748K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__nor2_1.gds
-2026-10-03 10:36:08 -0400: Memory Usage (434044K) : DRC RESULT: FAILURE (38 violation(s))
-2026-10-03 10:36:08 -0400: Memory Usage (434044K) :   'CO.5b'              :    37 violation(s)
-2026-10-03 10:36:08 -0400: Memory Usage (434044K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:06:57 -0400: Memory Usage (433844K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__or2_1.gds
-2026-10-03 10:36:11 -0400: Memory Usage (434828K) : DRC RESULT: FAILURE (44 violation(s))
-2026-10-03 10:36:11 -0400: Memory Usage (434828K) :   'CO.5b'              :    43 violation(s)
-2026-10-03 10:36:11 -0400: Memory Usage (434828K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:07:00 -0400: Memory Usage (434936K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__tbuf_1.gds
-2026-10-03 10:36:14 -0400: Memory Usage (434400K) : DRC RESULT: FAILURE (53 violation(s))
-2026-10-03 10:36:14 -0400: Memory Usage (434400K) :   'CO.5b'              :    52 violation(s)
-2026-10-03 10:36:14 -0400: Memory Usage (434400K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:07:04 -0400: Memory Usage (434664K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__tieh.gds
-2026-10-03 10:36:17 -0400: Memory Usage (434380K) : DRC RESULT: FAILURE (72 violation(s))
-2026-10-03 10:36:17 -0400: Memory Usage (434380K) :   'CO.5a'              :    34 violation(s)
-2026-10-03 10:36:17 -0400: Memory Usage (434380K) :   'CO.5b'              :    36 violation(s)
-2026-10-03 10:36:17 -0400: Memory Usage (434380K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:07:07 -0400: Memory Usage (433396K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__tiel.gds
-2026-10-03 10:36:21 -0400: Memory Usage (433612K) : DRC RESULT: FAILURE (72 violation(s))
-2026-10-03 10:36:21 -0400: Memory Usage (433612K) :   'CO.5a'              :    34 violation(s)
-2026-10-03 10:36:21 -0400: Memory Usage (433612K) :   'CO.5b'              :    36 violation(s)
-2026-10-03 10:36:21 -0400: Memory Usage (433612K) :   'DF.11'              :     2 violation(s)
+2026-10-16 10:07:11 -0400: Memory Usage (433624K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__tinv_1.gds
-2026-10-03 10:36:24 -0400: Memory Usage (435412K) : DRC RESULT: FAILURE (45 violation(s))
-2026-10-03 10:36:24 -0400: Memory Usage (435412K) :   'CO.5b'              :    44 violation(s)
-2026-10-03 10:36:24 -0400: Memory Usage (435412K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:07:14 -0400: Memory Usage (433980K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__xnor2_1.gds
-2026-10-03 10:36:27 -0400: Memory Usage (434496K) : DRC RESULT: FAILURE (68 violation(s))
-2026-10-03 10:36:27 -0400: Memory Usage (434496K) :   'CO.5b'              :    67 violation(s)
-2026-10-03 10:36:27 -0400: Memory Usage (434496K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:07:17 -0400: Memory Usage (436472K) : DRC RESULT: SUCCESS (0 violations)
 Running DRC on: gf180mcu_ocd_sc_rt12t3v3__xor2_1.gds
-2026-10-03 10:36:30 -0400: Memory Usage (434772K) : DRC RESULT: FAILURE (69 violation(s))
-2026-10-03 10:36:30 -0400: Memory Usage (434772K) :   'CO.5b'              :    68 violation(s)
-2026-10-03 10:36:30 -0400: Memory Usage (434772K) :   'DF.11'              :     1 violation(s)
+2026-10-16 10:07:21 -0400: Memory Usage (436256K) : DRC RESULT: SUCCESS (0 violations)
