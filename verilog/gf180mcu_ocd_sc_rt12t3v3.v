@@ -1,64 +1,271 @@
-module gf180mcu_ocd_sc_rt12t3v3__dlxfp_2(
+//--------------------------------------------------
+// Verilog library of standard cells for the
+// Open Circuit Design gf180mcu_ocd_sc_rt12t3v3
+// library.
+//--------------------------------------------------
+
+//--------------------------------------------------
+// 2-input AND
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__and2_1 (
 	input VDD,
 	input VSS,
-	
-	input ENA,
-	input D,
-	output Q
+
+	input A,
+	input B,
+	output Y
 );
 
-reg state;
-always @(ENA, D) if(ENA) state <= D;
-assign Q = !state;
+assign Y = A & B;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__dlxfn_2(
+//--------------------------------------------------
+// Antenna diode
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__ant(
 	input VDD,
 	input VSS,
-	
-	input ENA,
-	input D,
-	output Q
-);
 
-reg state;
-always @(ENA, D) if(!ENA) state <= D;
-assign Q = !state;
+	input A
+);
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__dlxtp_2(
+//--------------------------------------------------
+// AND-OR-INVERT (2 and 1 inputs)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__aoi21_1 (
 	input VDD,
 	input VSS,
-	
-	input ENA,
-	input D,
-	output Q
+
+	input A,
+	input B,
+	input C,
+	output Y
 );
 
-reg state;
-always @(ENA, D) if(ENA) state <= D;
-assign Q = state;
+assign Y = ~((A & B) | C);
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__dlxtn_2(
+//--------------------------------------------------
+// AND-OR-INVERT (2 and 2 inputs)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__aoi22_1 (
 	input VDD,
 	input VSS,
-	
-	input ENA,
+
+	input A,
+	input B,
+	input C,
 	input D,
-	output Q
+	output Y
 );
 
-reg state;
-always @(ENA, D) if(!ENA) state <= D;
-assign Q = state;
+assign Y = ~((A & B) | (C & D));
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__dfxtp_2(
+//--------------------------------------------------
+// AND-OR-INVERT (3 and 1 inputs)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__aoi31_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y
+);
+
+assign Y = ~((A & B & C) | D);
+
+endmodule
+
+//--------------------------------------------------
+// Buffer (strength 1)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__buf_1 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Buffer (strength 2)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__buf_2 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Buffer (strength 4)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__buf_4 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Buffer (strength 8)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__buf_8 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Buffer (strength 16)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__buf_16 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Clock Buffer (strength 1)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__clkbuf_1 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Clock Buffer (strength 2)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__clkbuf_2 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Clock Buffer (strength 4)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__clkbuf_4 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Clock Buffer (strength 8)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__clkbuf_8 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Clock Buffer (strength 16)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__clkbuf_16 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = A;
+
+endmodule
+
+//--------------------------------------------------
+// Decap filler cell (size 4)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__decap_4 (
+	input VDD,
+	input VSS
+);
+
+endmodule
+
+//--------------------------------------------------
+// Flop-flop (positive clock)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__dff_1 (
 	input VDD,
 	input VSS,
 	
@@ -73,52 +280,30 @@ assign Q = state;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__dyn_dfxtp_2(
+//--------------------------------------------------
+// Flop-flop (negative clock)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__dffn_1 (
 	input VDD,
 	input VSS,
 	
-	input CLK,
+	input CLKN,
 	input D,
 	output Q
 );
 
 reg state;
-always @(posedge CLK) state <= D;
+always @(negedge CLKN) state <= D;
 assign Q = state;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__dfxtp_4(
-	input VDD,
-	input VSS,
-	
-	input CLK,
-	input D,
-	output Q
-);
+//--------------------------------------------------
+// Flop-flop (positive clock, set, and reset)
+//--------------------------------------------------
 
-reg state;
-always @(posedge CLK) state <= D;
-assign Q = state;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__dfxtn_2(
-	input VDD,
-	input VSS,
-	
-	input CLK,
-	input D,
-	output Q
-);
-
-reg state;
-always @(negedge CLK) state <= D;
-assign Q = state;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__dfsrtp_2(
+module gf180mcu_ocd_sc_rt12t3v3__dffsr_1 (
 	input VDD,
 	input VSS,
 
@@ -150,127 +335,82 @@ assign Q = state;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__buff_2(
+//--------------------------------------------------
+// Latch (positive enable)
+//--------------------------------------------------
+
+module gf180mcu_as_sc_mcu7t3v3__dlat_1 (
 	input VDD,
 	input VSS,
-	
-	input A,
-	output Y
+
+	input CLK,
+	input D,
+	output Q
 );
 
-assign Y = A;
+reg state;
+always @(CLK, D) if(CLK) state <= D;
+assign Q = state;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__buff_4(
+//--------------------------------------------------
+// Latch (negative enable)
+//--------------------------------------------------
+
+module gf180mcu_as_sc_mcu7t3v3__dlatn_1 (
 	input VDD,
 	input VSS,
-	
-	input A,
-	output Y
+
+	input CLKN,
+	input D,
+	output Q
 );
 
-assign Y = A;
+reg state;
+always @(CLKN, D) if(!CLKN) state <= D;
+assign Q = state;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__buff_8(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
+//--------------------------------------------------
+// Filler (width 1)
+//--------------------------------------------------
 
-assign Y = A;
+module gf180mcu_ocd_sc_rt12t3v3__fill_1 (
+	input VDD,
+	input VSS
+);
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__buff_12(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
+//--------------------------------------------------
+// Filler (width 2)
+//--------------------------------------------------
 
-assign Y = A;
+module gf180mcu_ocd_sc_rt12t3v3__fill_2 (
+	input VDD,
+	input VSS
+);
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__buff_16(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
+//--------------------------------------------------
+// Filler (width 4)
+//--------------------------------------------------
 
-assign Y = A;
+module gf180mcu_ocd_sc_rt12t3v3__fill_4 (
+	input VDD,
+	input VSS
+);
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__clkbuff_4(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
+//--------------------------------------------------
+// Inverter (strength 1)
+//--------------------------------------------------
 
-assign Y = A;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__clkbuff_8(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
-
-assign Y = A;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__clkbuff_12(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
-
-assign Y = A;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__dlybuff_2(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
-
-assign Y = A;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__dlybuff_4(
-	input VDD,
-	input VSS,
-	
-	input A,
-	output Y
-);
-
-assign Y = A;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__inv_2(
+module gf180mcu_ocd_sc_rt12t3v3__inv_1 (
 	input VDD,
 	input VSS,
 	
@@ -282,7 +422,11 @@ assign Y = !A;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__inv_4(
+//--------------------------------------------------
+// Inverter (strength 2)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__inv_2 (
 	input VDD,
 	input VSS,
 	
@@ -294,7 +438,11 @@ assign Y = !A;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__inv_6(
+//--------------------------------------------------
+// Inverter (strength 4)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__inv_4 (
 	input VDD,
 	input VSS,
 	
@@ -306,7 +454,233 @@ assign Y = !A;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__invz_2(
+//--------------------------------------------------
+// Inverter (strength 8)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__inv_8 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = !A;
+
+endmodule
+
+//--------------------------------------------------
+// Inverter (strength 16)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__inv_16 (
+	input VDD,
+	input VSS,
+	
+	input A,
+	output Y
+);
+
+assign Y = !A;
+
+endmodule
+
+//--------------------------------------------------
+// Majority-3
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__maj3_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	input C,
+	output Y
+);
+
+assign Y = (A & B) | (A & C) | (B & C);
+
+endmodule
+
+//--------------------------------------------------
+// 2-input Multiplexer
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__mux2_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	input S,
+	output Y
+);
+
+assign Y = (S&B) | ((!S)&A);
+
+endmodule
+
+//--------------------------------------------------
+// 2-input NAND
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__nand2_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	output Y
+);
+
+assign Y = !(A & B);
+
+endmodule
+
+//--------------------------------------------------
+// 2-input NOR
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__nor2_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	output Y
+);
+
+assign Y = !(A | B);
+
+endmodule
+
+//--------------------------------------------------
+// OR-AND-INVERT (2 and 1 inputs)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__oai21_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	input C,
+	output Y
+);
+
+assign Y = ~((A | B) & C);
+
+endmodule
+
+//--------------------------------------------------
+// OR-AND-INVERT (2 and 2 inputs)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__oai22_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y
+);
+
+assign Y = ~((A | B) & (C | D));
+
+endmodule
+
+//--------------------------------------------------
+// OR-AND-INVERT (3 and 1 inputs)
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__oai31_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	input C,
+	input D,
+	output Y
+);
+
+assign Y = ~((A | B | C) & D));
+
+endmodule
+
+//--------------------------------------------------
+// 2-input OR
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__or2_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input B,
+	output Y
+);
+
+assign Y = A | B;
+
+endmodule
+
+//--------------------------------------------------
+// Tristate buffer
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__tbuf_1 (
+	input VDD,
+	input VSS,
+
+	input A,
+	input EN,
+	output Y
+);
+
+assign Y = (EN == 1'b1) ? A : 1'bz;
+
+endmodule
+
+//--------------------------------------------------
+// Tie-high output
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__tieh (
+	input VDD,
+	input VSS,
+
+	output Y
+);
+
+assign Y = 1'b1;
+
+endmodule
+
+//--------------------------------------------------
+// Tie-low output
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__tiel (
+	input VDD,
+	input VSS,
+
+	output Y
+);
+
+assign Y = 1'b0;
+
+endmodule
+
+//--------------------------------------------------
+// Tristate inverter
+//--------------------------------------------------
+
+module gf180mcu_ocd_sc_rt12t3v3__tinv_1 (
 	input VDD,
 	input VSS,
 
@@ -319,206 +693,11 @@ assign Y = (EN == 1'b1) ? ~A : 1'bz;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__nand2_2(
-	input VDD,
-	input VSS,
+//--------------------------------------------------
+// Exclusive NOR
+//--------------------------------------------------
 
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = !(A & B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nand2_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = !(A & B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nand2b_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A | (!B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nand2b_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A | (!B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nand3_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = !(A & B & C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nand4_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = !(A & B & C & D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nor2_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = !(A | B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nor2_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = !(A | B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nor2b_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A & (!B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nor2b_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A & (!B);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__nor3_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = !(A | B | C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__and2_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A & B;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__and2_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A & B;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__or2_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A | B;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__or2_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A | B;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__xnor2_2(
+module gf180mcu_ocd_sc_rt12t3v3__xnor2_1 (
 	input VDD,
 	input VSS,
 
@@ -531,20 +710,11 @@ assign Y = A == B;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__xnor2_4(
-	input VDD,
-	input VSS,
+//--------------------------------------------------
+// Exclusive OR
+//--------------------------------------------------
 
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A == B;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__xor2_2(
+module gf180mcu_ocd_sc_rt12t3v3__xor2_1 (
 	input VDD,
 	input VSS,
 
@@ -557,538 +727,4 @@ assign Y = A != B;
 
 endmodule
 
-module gf180mcu_ocd_sc_rt12t3v3__xor2_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	output Y
-);
-
-assign Y = A != B;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__maj3_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = (A & B) | (A & C) | (B & C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__maj3_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = (A & B) | (A & C) | (B & C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi21_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ~((A & B) | C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi21_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ~((A & B) | C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi21b_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ~(((~A) & B) | C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi21b_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ~(((~A) & B) | C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao21_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = (A & B) | C;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao21_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = (A & B) | C;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao21b_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ((~A) & B) | C;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao21b_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ((~A) & B) | C;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi22_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A & B) | (C & D));
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi22_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A & B) | (C & D));
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao22_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = (A & B) | (C & D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao22_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = (A & B) | (C & D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi31_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A & B & C) | D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi31_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A & B & C) | D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi211_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A & B) | C | D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__aoi211_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A & B) | C | D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao211_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = (A & B) | C | D;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao211_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = (A & B) | C | D;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao31_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = (A & B & C) | D;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ao31_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = (A & B & C) | D;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__oai21_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ~((A | B) & C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__oai21_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = ~((A | B) & C);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__oa21_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = (A | B) & C;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__oa21_4 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	output Y
-);
-
-assign Y = (A | B) & C;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__oai211_2 (
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	output Y
-);
-
-assign Y = ~((A | B) & C & D);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__mux2_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input S,
-	output Y
-);
-
-assign Y = (S&B) | ((!S)&A);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__mux2_4(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input S,
-	output Y
-);
-
-assign Y = (S&B) | ((!S)&A);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__mux4_2(
-	input VDD,
-	input VSS,
-
-	input A,
-	input B,
-	input C,
-	input D,
-	input S0,
-	input S1,
-	output Y
-);
-
-assign Y = ((A & (!S0) & (!S1)) | (B & S0 & (!S1)) | (C & (!S0) & S1) | (D & S0 & S1));
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__tap_2(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fill_1(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fill_2(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fill_4(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fill_8(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fillcap_4(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fillcap_8(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__fillcap_16(
-	input VDD,
-	input VSS
-);
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__tieh(
-	input VDD,
-	input VSS,
-
-	output Y
-);
-
-assign Y = 1'b1;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__tiel(
-	input VDD,
-	input VSS,
-
-	output Y
-);
-
-assign Y = 1'b0;
-
-endmodule
-
-module gf180mcu_ocd_sc_rt12t3v3__ant(
-	input VDD,
-	input VSS,
-
-	input A
-);
-
-endmodule
+//--------------------------------------------------
