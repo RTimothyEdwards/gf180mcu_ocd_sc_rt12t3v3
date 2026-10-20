@@ -608,7 +608,7 @@ module gf180mcu_ocd_sc_rt12t3v3__oai31_1 (
 	output Y
 );
 
-assign Y = ~((A | B | C) & D));
+assign Y = ~((A | B | C) & D);
 
 endmodule
 
